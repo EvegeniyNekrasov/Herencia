@@ -5,6 +5,7 @@ public class Persona {
     protected char genero;
     protected int edad;
     protected String direccion;
+    protected String email;
 
     // Constructor vacio
     public Persona() {
@@ -64,9 +65,25 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    // Get email
+    public String getEmail() {
+        return email;
+    }
+
+    // Set direccion
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
-        return "Persona {" + "nombre: " + nombre + ", genero: " + genero + ", edad: " + edad + ", direccion: "
-                + direccion + "}";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona { nombte: ").append(nombre);
+        sb.append(", genero: ").append(genero);
+        sb.append(", edad: ").append(edad);
+        sb.append(", direccion: ").append(direccion);
+        sb.append(", email: ").append(email);
+        sb.append("}");
+        return sb.toString();
     }
 }
