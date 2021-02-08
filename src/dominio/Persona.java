@@ -18,7 +18,7 @@ public class Persona {
     }
 
     // Constructor completo
-    public Persona(String nombre, char genero, int edad, String direccion) {
+    public Persona(String nombre, char genero, int edad, String direccion, String email) {
         this.nombre = nombre;
         this.genero = genero;
         this.edad = edad;
